@@ -46,6 +46,25 @@
 # @lc code=start
 class Solution:
     def numIslands(self, grid: List[List[str]]) -> int:
+        result = 0
+        for x in range(len(grid)):
+            for y in range(len(grid[0])):
+                if grid[x][y] == "0":
+                    continue
+                result += 1
+                self.bfs(grid, x, y)
+        return result
+    def bfs(self, grid, x, y):
+        if (x >= len(grid) or x < 0 or y >= len(grid[0]) or y < 0):
+            return
+        if grid[x][y] == "0":
+            return
+        grid[x][y] = "0"
+        self.bfs(grid, x + 1, y)
+        self.bfs(grid, x - 1, y)
+        self.bfs(grid, x, y + 1)
+        self.bfs(grid, x, y - 1)
+
 
 # @lc code=end
 
