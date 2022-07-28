@@ -57,3 +57,8 @@ class Solution {
 }
 // @lc code=end
 
+fun main() {
+    val s = Solution()
+    println(s.firstMissingPositive(intArrayOf(1,2,3,5,7,4)))
+}
+
