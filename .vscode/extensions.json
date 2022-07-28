@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "formulahendry.code-runner",
+        "fwcd.kotlin",
+        "vscjava.vscode-java-pack",
+        "vscodevim.vim"
+    ]
+}
