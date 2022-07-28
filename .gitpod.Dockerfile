@@ -10,4 +10,5 @@ RUN sudo su -c "cd /usr; curl -L https://github.com/moby/buildkit/releases/downl
 
 USER gitpod
 RUN brew install kotlin
-RUN echo 'finish installing kotlin'
+RUN brew install gradle
+RUN echo 'finish installing'
